@@ -36,20 +36,94 @@ F 3 "~" H 3700 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:OP07 U?
-U 1 1 5FC15795
-P 4550 3200
-F 0 "U?" H 4894 3246 50  0000 L CNN
-F 1 "OP07" H 4894 3155 50  0000 L CNN
-F 2 "" H 4600 3250 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf" H 4600 3350 50  0001 C CNN
-	1    4550 3200
+L Device:R R?
+U 1 1 5FC15AD2
+P 4100 3000
+F 0 "R?" H 4170 3046 50  0000 L CNN
+F 1 "R" H 4170 2955 50  0000 L CNN
+F 2 "" V 4030 3000 50  0001 C CNN
+F 3 "~" H 4100 3000 50  0001 C CNN
+	1    4100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FC15C1A
+P 4400 3000
+F 0 "R?" H 4470 3046 50  0000 L CNN
+F 1 "R" H 4470 2955 50  0000 L CNN
+F 2 "" V 4330 3000 50  0001 C CNN
+F 3 "~" H 4400 3000 50  0001 C CNN
+	1    4400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FC15DE0
+P 4800 3000
+F 0 "R?" H 4870 3046 50  0000 L CNN
+F 1 "R" H 4870 2955 50  0000 L CNN
+F 2 "" V 4730 3000 50  0001 C CNN
+F 3 "~" H 4800 3000 50  0001 C CNN
+	1    4800 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4450 2900 4450 2500
+	3300 2900 3300 2450
 Wire Wire Line
-	4450 2500 3700 2500
+	3300 2450 3700 2450
 Wire Wire Line
-	3700 2500 3700 2850
+	3700 2450 3700 2850
+Wire Wire Line
+	3700 2450 4100 2450
+Wire Wire Line
+	4100 2450 4100 2850
+Connection ~ 3700 2450
+Wire Wire Line
+	4100 2450 4400 2450
+Wire Wire Line
+	4400 2450 4400 2850
+Connection ~ 4100 2450
+Wire Wire Line
+	4400 2450 4800 2450
+Wire Wire Line
+	4800 2450 4800 2850
+Connection ~ 4400 2450
+$Comp
+L power:GND #PWR?
+U 1 1 5FC164EA
+P 4000 3600
+F 0 "#PWR?" H 4000 3350 50  0001 C CNN
+F 1 "GND" H 4005 3427 50  0000 C CNN
+F 2 "" H 4000 3600 50  0001 C CNN
+F 3 "" H 4000 3600 50  0001 C CNN
+	1    4000 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3200 3300 3450
+Wire Wire Line
+	3300 3450 3700 3450
+Wire Wire Line
+	4000 3450 4000 3600
+Wire Wire Line
+	3700 3150 3700 3450
+Connection ~ 3700 3450
+Wire Wire Line
+	4100 3150 4100 3450
+Wire Wire Line
+	3700 3450 4000 3450
+Connection ~ 4000 3450
+Wire Wire Line
+	4000 3450 4100 3450
+Wire Wire Line
+	4400 3150 4400 3450
+Wire Wire Line
+	4400 3450 4100 3450
+Connection ~ 4100 3450
+Wire Wire Line
+	4800 3150 4800 3450
+Wire Wire Line
+	4800 3450 4400 3450
+Connection ~ 4400 3450
 $EndSCHEMATC
